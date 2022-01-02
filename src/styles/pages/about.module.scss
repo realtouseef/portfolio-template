@@ -1,0 +1,83 @@
+@import "../../styles/settings/__settings";
+
+.about {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-top: 8em;
+  .heading {
+    font-size: 9.374rem;
+    line-height: 8.889rem;
+    margin: 0.3em 0;
+    user-select: none;
+  }
+  &_content {
+    max-width: 35em;
+    margin: 3em 0;
+    p {
+      text-align: left;
+      margin: 2em 0;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.about_links {
+  .history_heading {
+    font-size: 4rem;
+    margin: 1em 0;
+  }
+  .links_data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+    margin-bottom: 10em;
+    h3 {
+      font-size: 1.3rem;
+    }
+    p {
+      font-size: 1.125rem;
+      margin: 0.5em 0;
+    }
+    a {
+      color: $bold;
+      font-size: 1.125rem;
+      font-weight: 800;
+      &:hover,
+      &:focus {
+        color: $btn-before-hover;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .about {
+    .heading {
+      font-size: 4rem;
+      line-height: 4.444rem;
+    }
+  }
+  .about_links {
+    .history_heading {
+      font-size: 3rem;
+    }
+    .links_data {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .about {
+    .heading {
+      font-size: 2.667rem;
+      line-height: 3.11rem;
+    }
+  }
+  .about_links {
+    .history_heading {
+      font-size: 2rem;
+    }
+  }
+}

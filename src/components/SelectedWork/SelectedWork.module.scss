@@ -1,0 +1,48 @@
+@import "../../styles/settings/__settings";
+
+.select {
+  &_first_heading {
+    padding: 1em 0;
+    font-size: 5rem;
+  }
+
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5em;
+
+    h1 {
+      margin: 0.5em 0;
+      font-size: 2.5rem;
+    }
+
+    p {
+      max-width: 30em;
+      padding-bottom: 1.5em;
+      font-size: 1.25rem;
+    }
+
+    a {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: $bold;
+      &:hover,
+      &:focus {
+        color: $btn-after-hover;
+      }
+    }
+
+    img {
+      border-radius: 2em;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .select_content {
+    flex-direction: column;
+    gap: 1em 0;
+  }
+}

@@ -1,0 +1,85 @@
+@import "../../styles/settings/__settings";
+
+.work_heading {
+  display: grid;
+  place-content: center;
+  height: 100%;
+  margin: 1.2em 0;
+  font-size: 9.374rem;
+  font-weight: 800;
+  line-height: 10rem;
+  color: $bold;
+  text-align: center;
+  user-select: none;
+}
+
+.work {
+  max-width: 60em;
+  margin: 0 auto;
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    margin: 0.5em 0;
+    font-size: 2rem;
+  }
+  a {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: $bold;
+    &:hover,
+    &:focus {
+      color: $btn-after-hover;
+    }
+  }
+  &_image {
+    margin-top: 3em;
+    img {
+      border-radius: 2em;
+    }
+    hr {
+      background-color: $paragraph;
+      margin-bottom: 6em;
+      opacity: 0;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .work_heading {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+  .work {
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    a {
+      font-size: 1.125rem;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .work_heading {
+    margin: 4em 0;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .work {
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    a {
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+    }
+  }
+}

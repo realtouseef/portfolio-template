@@ -1,0 +1,118 @@
+@import "../../styles/settings/__settings";
+
+.contact {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-top: 8em;
+
+  &_links {
+    .contact_heading {
+      font-size: 9.374rem;
+      margin: 0.3em 0;
+      user-select: none;
+    }
+    a {
+      margin-right: 2.5em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      :hover,
+      &:focus {
+        color: $link-after-hover;
+      }
+    }
+  }
+
+  .btn {
+    border: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: 800;
+    background-color: $btn-after-hover;
+    margin: 6em 0;
+    padding: 1em 1.5em;
+    color: $bold;
+    letter-spacing: 0.05rem;
+    border-radius: 10em;
+    cursor: pointer;
+    transition: transform 250ms ease;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.04);
+    }
+  }
+
+  .about {
+    max-width: 35em;
+    margin: 3em 0;
+    font-size: 1.6rem;
+    text-align: left;
+    p {
+      margin: 1em 0;
+      span {
+        color: $bold;
+      }
+    }
+  }
+}
+.available {
+  margin: 10em 0;
+  h1 {
+    font-size: 4rem;
+    margin: 1em 0;
+  }
+
+  &_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+    margin-bottom: 20em;
+    h3 {
+      font-size: 1.3rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .contact {
+    &_links {
+      .contact_heading {
+        font-size: 6rem;
+      }
+    }
+    .btn {
+      font-size: 1rem;
+    }
+
+    .about {
+      font-size: 1.25rem;
+    }
+  }
+  .available {
+    h1 {
+      font-size: 3rem;
+    }
+    &_content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .contact {
+    &_links {
+      .contact_heading {
+        font-size: 4rem;
+      }
+    }
+    .btn {
+      padding: 0.8em 1.5em;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+@import "../../styles/settings/__settings";
+
+.main_nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 1em 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+
+  .logo {
+    cursor: pointer;
+
+    a {
+      &:hover,
+      &:focus {
+        color: $link-after-hover;
+      }
+    }
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+
+    a {
+      margin-right: 2em;
+
+      &:hover,
+      &:focus {
+        color: $link-after-hover;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+    .ham_logo {
+      span {
+        z-index: 999;
+        cursor: pointer;
+        mix-blend-mode: difference;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .main_nav {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main_nav {
+    position: relative;
+    .links {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+      position: fixed;
+      top: 3%;
+      right: 7%;
+      z-index: 100;
+
+      .links_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 80%;
+        background-color: $navbar-sidebar;
+
+        a {
+          color: $navbar-sidebar-text;
+          font-weight: 800;
+          font-size: 1.8rem;
+          margin: 1em 0;
+          &:hover,
+          &:focus {
+            color: $navbar-sidebar-text-hover;
+          }
+        }
+
+        .links_social {
+          text-align: center;
+          margin: 2em 0;
+          h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5em;
+            color: $navbar-sidebar-text;
+          }
+          a {
+            margin-right: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}

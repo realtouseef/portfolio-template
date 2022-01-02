@@ -1,0 +1,77 @@
+@import "../../styles/settings/__settings";
+
+.footer {
+  margin: 10em 0;
+  &_social_section {
+    margin: 4em 0;
+
+    .headshot {
+      background-image: url(/pic/touseef-headshot.jpg);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+      margin-bottom: 1em;
+      width: 100px;
+      height: 100px;
+      border-radius: 10em;
+      transform: rotate(-70deg);
+    }
+    p {
+      max-width: 20em;
+      font-size: 1.125rem;
+    }
+    &_links {
+      margin-top: 1em;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      position: relative;
+
+      a {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5em 0;
+        font-size: 1.125rem;
+        color: $bold;
+
+        &:hover,
+        &:focus {
+          color: $link-before-hover;
+        }
+      }
+    }
+  }
+  div {
+    width: 200px;
+
+    .animated_gif {
+      background-image: url("/pic/giphy.gif");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      padding: 5em 0;
+    }
+  }
+
+  .date {
+    text-align: center;
+    padding: 1em 0;
+  }
+}
+
+@media (min-width: $tablet) {
+  .footer {
+    &_social_section {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      &_links {
+        margin-top: 0;
+      }
+    }
+  }
+  div {
+    .animated_gif {
+      flex-direction: column;
+    }
+  }
+}
