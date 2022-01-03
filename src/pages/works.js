@@ -15,11 +15,11 @@ const works = () => {
       </section>
 
       {WorkData.map((item) => (
-        <article className={styles.work}>
+        <article className={styles.work} key={item.id}>
           <main>
             <h1>{item.title}</h1>
             <p>{item.description}</p>
-            <a href={item.link} target="_blank">
+            <a href={item.link} target="_blank" rel="noreferrer">
               {item.linkText}
             </a>
           </main>

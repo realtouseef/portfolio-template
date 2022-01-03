@@ -39,21 +39,33 @@ const about = () => {
             <article>
               <h3>Quranfan</h3>
               <p>Lead Developer</p>
-              <a href={`https://quranfan.vercel.app`} target="_blank">
+              <a
+                href={`https://quranfan.vercel.app`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 quranfan.com →
               </a>
             </article>
             <article>
               <h3>Buymeacoffee Clone</h3>
               <p>Lead Developer</p>
-              <a href={`https://buymeacoffee-clone.vercel.app`} target="_blank">
+              <a
+                href={`https://buymeacoffee-clone.vercel.app`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 buymeacoffee-clone.com →
               </a>
             </article>
             <article>
               <h3>Qoals Clone</h3>
               <p>Lead Developer</p>
-              <a href={`https://qoals-clone.vercel.app`} target="_blank">
+              <a
+                href={`https://qoals-clone.vercel.app`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 qoals-clone.com →
               </a>
             </article>

@@ -8,11 +8,11 @@ const SelectedWork = () => {
       <section className={styles.select}>
         <h1 className={styles.select_first_heading}>work.</h1>
         {WorkData.map((item) => (
-          <article className={styles.select_content}>
+          <article className={styles.select_content} key={item.id}>
             <main>
               <h1>{item.title}</h1>
               <p>{item.description}</p>
-              <a href={item.link} target="_blank">
+              <a href={item.link} target="_blank" rel="noreferrer">
                 {item.linkText}
               </a>
             </main>

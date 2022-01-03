@@ -11,7 +11,11 @@ const contact = () => {
       <article className={styles.contact}>
         <section className={styles.contact_links}>
           <h1 className={styles.contact_heading}>Contact</h1>
-          <a href="https://twitter.com/touseefcodes" target="_blank">
+          <a
+            href="https://twitter.com/touseefcodes"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               src="/icons/twitter.svg"
               alt="twitter logo for @touseefcodes"
@@ -29,7 +33,11 @@ const contact = () => {
               objectFit="contain"
             />
           </a>
-          <a href="https://linkedin.com/in/touseefcodes" target="_blank">
+          <a
+            href="https://linkedin.com/in/touseefcodes"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               src="/icons/linkedin.svg"
               alt="linkedin logo for @touseefcodes"

@@ -12,7 +12,11 @@ const Footer = () => {
               diff one, you can contact me anytime. Click the below gif 😅
             </p>
             <div className="styles.gif_parent">
-              <a href="https://linkedin.com/in/touseefcodes" target="_blank">
+              <a
+                href="https://linkedin.com/in/touseefcodes"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className={styles.animated_gif}></div>
               </a>
             </div>
@@ -20,13 +24,25 @@ const Footer = () => {
           <article className={styles.footer_social_section_links}>
             <p>Elsewhere</p>
             <aside>
-              <a href="https://twitter.com/touseefcodes" target="_blank">
+              <a
+                href="https://twitter.com/touseefcodes"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Twitter
               </a>
-              <a href="https://instagram.com/touseefcodes" target="_blank">
+              <a
+                href="https://instagram.com/touseefcodes"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Instagram
               </a>
-              <a href="https://linkedin.com/in/touseefcodes" target="_blank">
+              <a
+                href="https://linkedin.com/in/touseefcodes"
+                target="_blank"
+                rel="noreferrer"
+              >
                 LinkedIn
               </a>
             </aside>

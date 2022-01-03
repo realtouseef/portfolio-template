@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Nav.module.scss";
@@ -21,15 +21,9 @@ const Navbar = () => {
           </Link>
         </div>
         <header className={styles.links}>
-          <Link className="link" href="/about">
-            about.
-          </Link>
-          <Link className="link" href="/works">
-            works.
-          </Link>
-          <Link className="link" href="/contact">
-            contact.
-          </Link>
+          <Link href="/about">about.</Link>
+          <Link href="/works">works.</Link>
+          <Link href="/contact">contact.</Link>
         </header>
         <div className={styles.hamburger} onClick={() => setMenu(!menu)}>
           <div className={styles.ham_logo}>
@@ -49,7 +43,11 @@ const Navbar = () => {
 
               <section className={styles.links_social}>
                 <h2>connect</h2>
-                <a href="https://twitter.com/touseefcodes" target="_blank">
+                <a
+                  href="https://twitter.com/touseefcodes"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Image
                     src="/icons/twitter.svg"
                     alt="twitter logo for @touseefcodes"
@@ -58,7 +56,11 @@ const Navbar = () => {
                     objectFit="contain"
                   />
                 </a>
-                <a href="https://instagram.com/touseefcodes" target="_blank">
+                <a
+                  href="https://instagram.com/touseefcodes"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Image
                     src="/icons/instagram.svg"
                     alt="instagram logo for @touseefcodes"
@@ -67,7 +69,11 @@ const Navbar = () => {
                     objectFit="contain"
                   />
                 </a>
-                <a href="https://linkedin.com/in/touseefcodes" target="_blank">
+                <a
+                  href="https://linkedin.com/in/touseefcodes"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Image
                     src="/icons/linkedin.svg"
                     alt="linkedin logo for @touseefcodes"

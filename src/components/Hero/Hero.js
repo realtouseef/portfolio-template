@@ -13,7 +13,11 @@ const Hero = () => {
           </h1>
           {/* link goes here  */}
           <section className={styles.hero_social}>
-            <a href="https://twitter.com/touseefcodes" target="_blank">
+            <a
+              href="https://twitter.com/touseefcodes"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image
                 src="/icons/twitter.svg"
                 alt="twitter logo for @touseefcodes"
@@ -22,7 +26,11 @@ const Hero = () => {
                 objectFit="contain"
               />
             </a>
-            <a href="https://instagram.com/touseefcodes" target="_blank">
+            <a
+              href="https://instagram.com/touseefcodes"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image
                 src="/icons/instagram.svg"
                 alt="instagram logo for @touseefcodes"
@@ -31,7 +39,11 @@ const Hero = () => {
                 objectFit="contain"
               />
             </a>
-            <a href="https://linkedin.com/in/touseefcodes" target="_blank">
+            <a
+              href="https://linkedin.com/in/touseefcodes"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image
                 src="/icons/linkedin.svg"
                 alt="linkedin logo for @touseefcodes"
@@ -71,6 +83,7 @@ const Hero = () => {
             <a
               href="https://www.upwork.com/freelancers/~013c6a875bcebb5f00"
               target="_blank"
+              rel="noreferrer"
             >
               <button>Upwork</button>
             </a>
