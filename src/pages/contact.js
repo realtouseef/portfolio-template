@@ -24,7 +24,11 @@ const contact = () => {
               objectFit="contain"
             />
           </a>
-          <a href="https://instagram.com/touseefcodes" target="_blank">
+          <a
+            href="https://instagram.com/touseefcodes"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               src="/icons/instagram.svg"
               alt="instagram logo for @touseefcodes"

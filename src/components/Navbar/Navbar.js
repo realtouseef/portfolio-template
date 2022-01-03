@@ -10,7 +10,7 @@ const Navbar = () => {
     <>
       <nav className={styles.main_nav}>
         <div className={styles.logo}>
-          <Link href="/">
+          <Link href="/" passHref>
             <Image
               src={"/icons/logo.svg"}
               alt="@touseefcodes logo"
