@@ -58,27 +58,25 @@ const Hero = () => {
         <article className={styles.hero_biography}>
           <div className={styles.text}>
             <p>
-              I'm currently Head of Design at Northstar and I produce music as
-              Cordio, make videos, design for coffee at Taste Notes, make icons
-              at OS Icons, work on ideas at Trademarked, and run my Patreon.
+              Touseef is a frontend developer specializing in React.js, NextJS,
+              Tailwindcss, and SCSS. His abilities go beyond just coding as he's
+              a quick learner and has a large appetite for knowledge. He has
+              good leadership skills and great communication skills as well.
             </p>
             <p>
-              I specialize in product design for both the web and mobile apps
-              and thrive in 0 → 1 work. My focus is in design leadership, visual
-              design, user experience, and design systems. I also code for the
-              web with a focus on React, CSS architecture, and component
-              systems.{" "}
+              His role is to write and style the front-end components that meet
+              the requirements of our mocks and fulfill our user stories.
             </p>
             <p>
-              I'm currently available for design advising roles for early stage
-              startups and sound/music design projects for apps, podcasts, and
-              films.
+              Touseef is an expert at structuring well-performing,
+              easily-maintainable javascript frontend applications. He is also
+              well-versed in modern web technologies.
             </p>
             <p>
-              {" "}
-              I produce music under the alias Cordio, and create tracks for
-              films, shows, and podcasts. Listen to all my music anywhere you
-              stream music, or snag some on my Bandcamp.
+              He has a knack for creating minimal websites. He has an eye for
+              even the smallest of details like choosing colors, font sizes,
+              images, etc. He is a big fan of simplicity and is a better team
+              leader as compared to an individual contributor.
             </p>
             <a
               href="https://www.upwork.com/freelancers/~013c6a875bcebb5f00"

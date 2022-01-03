@@ -12,20 +12,25 @@ const about = () => {
           <h1 className={styles.heading}>Make things & help othes</h1>
           <article className={styles.about_content}>
             <p>
-              My role is to write and style the front-end components that meet
-              the requirements of our mocks and fulfill our user stories.{" "}
+              Touseef is a frontend developer specializing in React.js, NextJS,
+              Tailwindcss, and SCSS. His abilities go beyond just coding as he's
+              a quick learner and has a large appetite for knowledge. He has
+              good leadership skills and great communication skills as well.
             </p>
             <p>
-              I also monitor and process pull requests for production
-              deployments.
+              His role is to write and style the front-end components that meet
+              the requirements of our mocks and fulfill our user stories.
             </p>
             <p>
-              I'm currently the Head of Design at Northstar, leading our design
-              efforts across the company and building a team to change the
-              future of financial wellness. I've helped scale multiple startups
-              and have worked on products with millions of users that have
-              changed the world (Uber, Facebook, Dave [has since IPO'd], Keller
-              Williams, and others).
+              Touseef is an expert at structuring well-performing,
+              easily-maintainable javascript frontend applications. He is also
+              well-versed in modern web technologies.
+            </p>
+            <p>
+              He has a knack for creating minimal websites. He has an eye for
+              even the smallest of details like choosing colors, font sizes,
+              images, etc. He is a big fan of simplicity and is a better team
+              leader as compared to an individual contributor.
             </p>
             <p>
               <span>Technologies I use:</span> SCSS, TailwindCSS, JavaScript,
