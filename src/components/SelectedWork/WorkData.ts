@@ -1,4 +1,13 @@
-export const WorkData = [
+interface Props {
+  id: number;
+  title: string;
+  description: string;
+  linkText: string;
+  link: string;
+  picture: string;
+}
+
+export const WorkData: Props[] = [
   {
     id: 1,
     title: "Quranfan",

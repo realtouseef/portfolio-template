@@ -1,22 +1,17 @@
+import { siteData } from "../../siteData";
 import styles from "./Footer.module.scss";
 
-const Footer = () => {
+const Footer: React.FC = () => {
+  const { footerBriefBio, linkedin, twitter } = siteData;
   return (
     <>
       <footer className={styles.footer}>
         <section className={styles.footer_social_section}>
           <article>
             <div className={styles.headshot}></div>
-            <p>
-              If you liked what you see and want to have a similar website or a
-              diff one, you can contact me anytime. Click the below gif 😅
-            </p>
+            <p>{footerBriefBio}</p>
             <div className="styles.gif_parent">
-              <a
-                href="https://linkedin.com/in/touseefcodes"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={linkedin} target="_blank" rel="noreferrer">
                 <div className={styles.animated_gif}></div>
               </a>
             </div>
@@ -24,11 +19,7 @@ const Footer = () => {
           <article className={styles.footer_social_section_links}>
             <p>Elsewhere</p>
             <aside>
-              <a
-                href="https://twitter.com/touseefcodes"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={twitter} target="_blank" rel="noreferrer">
                 Twitter
               </a>
               <a
@@ -38,11 +29,7 @@ const Footer = () => {
               >
                 Instagram
               </a>
-              <a
-                href="https://linkedin.com/in/touseefcodes"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={linkedin} target="_blank" rel="noreferrer">
                 LinkedIn
               </a>
             </aside>

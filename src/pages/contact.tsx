@@ -1,21 +1,19 @@
+import styles from "../styles/pages/contact.module.scss";
 import Image from "next/image";
 import Head from "next/head";
-import styles from "../styles/pages/contact.module.scss";
+import { siteData } from "../siteData";
 
-const contact = () => {
+const contact: React.FC = () => {
+  const { siteTitle, twitter, linkedin, email } = siteData;
   return (
     <>
       <Head>
-        <title>Contact | Touseef </title>
+        <title>Contact | {siteTitle} </title>
       </Head>
       <article className={styles.contact}>
         <section className={styles.contact_links}>
           <h1 className={styles.contact_heading}>Contact</h1>
-          <a
-            href="https://twitter.com/touseefcodes"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={twitter} target="_blank" rel="noreferrer">
             <Image
               src="/icons/twitter.svg"
               alt="twitter logo for @touseefcodes"
@@ -37,11 +35,7 @@ const contact = () => {
               objectFit="contain"
             />
           </a>
-          <a
-            href="https://linkedin.com/in/touseefcodes"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={linkedin} target="_blank" rel="noreferrer">
             <Image
               src="/icons/linkedin.svg"
               alt="linkedin logo for @touseefcodes"
@@ -51,7 +45,7 @@ const contact = () => {
             />
           </a>
         </section>
-        <div className={styles.btn}>touseef69r@gmail.com</div>
+        <div className={styles.btn}>{email}</div>
         <section className={styles.about}>
           <p>
             Touseef is an expert at structuring well-performing,

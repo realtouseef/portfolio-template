@@ -1,11 +1,13 @@
 import Head from "next/head";
+import { siteData } from "../siteData";
 import styles from "../styles/pages/about.module.scss";
 
-const about = () => {
+const about: React.FC = () => {
+  const { siteTitle } = siteData;
   return (
     <>
       <Head>
-        <title>About | Touseef </title>
+        <title>About | {siteTitle} </title>
       </Head>
       <section>
         <article className={styles.about}>

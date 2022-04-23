@@ -1,23 +1,20 @@
 import Image from "next/image";
 import styles from "./Hero.module.scss";
+import { siteData } from "../../siteData";
 
-const Hero = () => {
+const Hero: React.FC = () => {
+  const { upwork, externalHireLinkName, description, twitter, linkedin } =
+    siteData;
+
   return (
     <>
       <section className={styles.hero}>
         {/* the title goes here  */}
         <article className={styles.hero_header}>
-          <h1>
-            I'm Touseef ibn Khaleel — Jr. ReactJS Engineer, blogger, & a
-            software tinkerer.
-          </h1>
+          <h1>{description}</h1>
           {/* link goes here  */}
           <section className={styles.hero_social}>
-            <a
-              href="https://twitter.com/touseefcodes"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={twitter} target="_blank" rel="noreferrer">
               <Image
                 src="/icons/twitter.svg"
                 alt="twitter logo for @touseefcodes"
@@ -39,11 +36,7 @@ const Hero = () => {
                 objectFit="contain"
               />
             </a>
-            <a
-              href="https://linkedin.com/in/touseefcodes"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={linkedin} target="_blank" rel="noreferrer">
               <Image
                 src="/icons/linkedin.svg"
                 alt="linkedin logo for @touseefcodes"
@@ -78,12 +71,8 @@ const Hero = () => {
               images, etc. He is a big fan of simplicity and is a better team
               leader as compared to an individual contributor.
             </p>
-            <a
-              href="https://www.upwork.com/freelancers/~013c6a875bcebb5f00"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button>Upwork</button>
+            <a href={upwork} target="_blank" rel="noreferrer">
+              <button>{externalHireLinkName}</button>
             </a>
           </div>
           <div className={styles.pic}>

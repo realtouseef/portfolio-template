@@ -2,7 +2,7 @@ import Image from "next/image";
 import { WorkData } from "./WorkData";
 import styles from "./SelectedWork.module.scss";
 
-const SelectedWork = () => {
+const SelectedWork: React.FC = () => {
   return (
     <>
       <section className={styles.select}>

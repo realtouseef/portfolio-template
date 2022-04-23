@@ -1,12 +1,13 @@
 import styles from "./Glitch.module.scss";
-
-const Glitch = () => {
+import { siteData } from "../../siteData";
+const Glitch: React.FC = () => {
+  const { email } = siteData;
   return (
     <>
       <section className={styles.glitch}>
         <article className={styles.glitch_content}>
           <h1>Let's work together</h1>
-          <button>touseef69r@gmail.com</button>
+          <button>{email}</button>
         </article>
       </section>
     </>

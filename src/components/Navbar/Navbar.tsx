@@ -2,9 +2,11 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Nav.module.scss";
+import { siteData } from "../../siteData";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [menu, setMenu] = useState(false);
+  const { linkedin, twitter } = siteData;
 
   return (
     <>
@@ -22,7 +24,7 @@ const Navbar = () => {
         </div>
         <header className={styles.links}>
           <Link href="/about">about.</Link>
-          <Link href="/works">works.</Link>
+          <Link href="/work">works.</Link>
           <Link href="/contact">contact.</Link>
         </header>
         <div className={styles.hamburger} onClick={() => setMenu(!menu)}>
@@ -38,16 +40,12 @@ const Navbar = () => {
           {menu ? (
             <header className={styles.links_mobile}>
               <Link href="/about">about.</Link>
-              <Link href="/works">works.</Link>
+              <Link href="/work">works.</Link>
               <Link href="/contact">contact.</Link>
 
               <section className={styles.links_social}>
                 <h2>connect</h2>
-                <a
-                  href="https://twitter.com/touseefcodes"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={twitter} target="_blank" rel="noreferrer">
                   <Image
                     src="/icons/twitter.svg"
                     alt="twitter logo for @touseefcodes"
@@ -69,11 +67,7 @@ const Navbar = () => {
                     objectFit="contain"
                   />
                 </a>
-                <a
-                  href="https://linkedin.com/in/touseefcodes"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={linkedin} target="_blank" rel="noreferrer">
                   <Image
                     src="/icons/linkedin.svg"
                     alt="linkedin logo for @touseefcodes"

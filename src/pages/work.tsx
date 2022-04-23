@@ -1,14 +1,17 @@
+import styles from "../styles/pages/works.module.scss";
 import Image from "next/image";
 import { WorkData } from "../components/SelectedWork/WorkData";
-
 import Head from "next/head";
-import styles from "../styles/pages/works.module.scss";
+import { siteData } from "../siteData";
 
-const works = () => {
+const work: React.FC = () => {
+  const { siteTitle, description, siteKeywords } = siteData;
   return (
     <>
       <Head>
-        <title>Work | Touseef </title>
+        <title>Work | {siteTitle}</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content={siteKeywords} />
       </Head>
       <section className={styles.work_heading}>
         aimed at easing your life.
@@ -39,4 +42,4 @@ const works = () => {
   );
 };
 
-export default works;
+export default work;
