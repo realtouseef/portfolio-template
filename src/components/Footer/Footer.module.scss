@@ -6,15 +6,13 @@
     margin: 4em 0;
 
     .headshot {
-      background-image: url(/pic/touseef-headshot.jpg);
       background-repeat: no-repeat;
       background-size: auto;
       background-position: center;
       margin-bottom: 1em;
-      width: 100px;
-      height: 100px;
-      border-radius: 10em;
-      transform: rotate(-70deg);
+      img {
+        border-radius: 10em;
+      }
     }
     p {
       max-width: 20em;

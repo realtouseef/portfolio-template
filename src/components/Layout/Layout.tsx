@@ -5,7 +5,11 @@ import Glitch from "../Glitch/Glitch";
 // scss
 import styles from "./Layout.module.scss";
 
-const Layout = ({ children }) => {
+type ChildProps = {
+  children: React.ReactNode;
+};
+
+const Layout: React.FC = ({ children }: ChildProps) => {
   return (
     <>
       <section className={styles.container}>

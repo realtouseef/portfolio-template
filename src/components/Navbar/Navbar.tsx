@@ -1,8 +1,9 @@
+import styles from "./Nav.module.scss";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./Nav.module.scss";
 import { siteData } from "../../siteData";
+import { NavItems } from "./NavItems";
 
 const Navbar: React.FC = () => {
   const [menu, setMenu] = useState(false);
@@ -14,7 +15,7 @@ const Navbar: React.FC = () => {
         <div className={styles.logo}>
           <Link href="/" passHref>
             <Image
-              src={"/icons/logo.svg"}
+              src="/favicon.jpg"
               alt="@touseefcodes logo"
               width={30}
               height={30}
@@ -23,9 +24,11 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
         <header className={styles.links}>
-          <Link href="/about">about.</Link>
-          <Link href="/work">works.</Link>
-          <Link href="/contact">contact.</Link>
+          {NavItems.map(({ id, name, path }) => (
+            <Link href={path} key={id}>
+              {name}
+            </Link>
+          ))}
         </header>
         <div className={styles.hamburger} onClick={() => setMenu(!menu)}>
           <div className={styles.ham_logo}>
@@ -39,10 +42,12 @@ const Navbar: React.FC = () => {
           </div>
           {menu ? (
             <header className={styles.links_mobile}>
-              <Link href="/about">about.</Link>
-              <Link href="/work">works.</Link>
-              <Link href="/contact">contact.</Link>
-
+              {/* nav items goes here  */}
+              {NavItems.map(({ id, name, path }) => (
+                <Link href={path} key={id}>
+                  {name}
+                </Link>
+              ))}
               <section className={styles.links_social}>
                 <h2>connect</h2>
                 <a href={twitter} target="_blank" rel="noreferrer">

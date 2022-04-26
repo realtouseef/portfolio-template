@@ -1,14 +1,29 @@
-import { siteData } from "../../siteData";
 import styles from "./Footer.module.scss";
+import Image from "next/image";
+import { siteData } from "../../siteData";
 
 const Footer: React.FC = () => {
-  const { footerBriefBio, linkedin, twitter } = siteData;
+  const {
+    footerBriefBio,
+    author,
+    linkedin,
+    twitter,
+    footerHeadshotImage,
+    github,
+  } = siteData;
   return (
     <>
       <footer className={styles.footer}>
         <section className={styles.footer_social_section}>
           <article>
-            <div className={styles.headshot}></div>
+            <div className={styles.headshot}>
+              <Image
+                src={footerHeadshotImage}
+                alt={`${author}'s headshot image`}
+                width={100}
+                height={100}
+              />
+            </div>
             <p>{footerBriefBio}</p>
             <div className="styles.gif_parent">
               <a href={linkedin} target="_blank" rel="noreferrer">
@@ -22,12 +37,8 @@ const Footer: React.FC = () => {
               <a href={twitter} target="_blank" rel="noreferrer">
                 Twitter
               </a>
-              <a
-                href="https://instagram.com/touseefcodes"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Instagram
+              <a href={github} target="_blank" rel="noreferrer">
+                GitHub
               </a>
               <a href={linkedin} target="_blank" rel="noreferrer">
                 LinkedIn

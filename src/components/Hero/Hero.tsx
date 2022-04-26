@@ -1,10 +1,19 @@
-import Image from "next/image";
 import styles from "./Hero.module.scss";
+import Image from "next/image";
 import { siteData } from "../../siteData";
 
 const Hero: React.FC = () => {
-  const { upwork, externalHireLinkName, description, twitter, linkedin } =
-    siteData;
+  const {
+    github,
+    upwork,
+    externalHireLinkName,
+    description,
+    twitter,
+    linkedin,
+    author,
+    largeProfileImage,
+  } = siteData;
+  console.log(largeProfileImage);
 
   return (
     <>
@@ -17,20 +26,16 @@ const Hero: React.FC = () => {
             <a href={twitter} target="_blank" rel="noreferrer">
               <Image
                 src="/icons/twitter.svg"
-                alt="twitter logo for @touseefcodes"
+                alt={`twitter logo for ${author}`}
                 width={30}
                 height={30}
                 objectFit="contain"
               />
             </a>
-            <a
-              href="https://instagram.com/touseefcodes"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={github} target="_blank" rel="noreferrer">
               <Image
-                src="/icons/instagram.svg"
-                alt="instagram logo for @touseefcodes"
+                src="/icons/github.svg"
+                alt={`instagram logo for ${author}`}
                 width={30}
                 height={30}
                 objectFit="contain"
@@ -39,7 +44,7 @@ const Hero: React.FC = () => {
             <a href={linkedin} target="_blank" rel="noreferrer">
               <Image
                 src="/icons/linkedin.svg"
-                alt="linkedin logo for @touseefcodes"
+                alt={`linkedin logo for ${author}`}
                 width={30}
                 height={30}
                 objectFit="contain"
@@ -51,10 +56,11 @@ const Hero: React.FC = () => {
         <article className={styles.hero_biography}>
           <div className={styles.text}>
             <p>
-              Touseef is a frontend developer specializing in React.js, NextJS,
-              Tailwindcss, and SCSS. His abilities go beyond just coding as he's
-              a quick learner and has a large appetite for knowledge. He has
-              good leadership skills and great communication skills as well.
+              Touseef is a Jr. Software Engineer specializing in TypeScript,
+              ReactJS / NextJS / GatsbyJS, TailwindCSS, and Firebase. His
+              abilities go beyond just coding as he's a quick learner and has a
+              large appetite for knowledge. He has good leadership skills and
+              great communication skills as well.
             </p>
             <p>
               His role is to write and style the front-end components that meet
@@ -77,8 +83,8 @@ const Hero: React.FC = () => {
           </div>
           <div className={styles.pic}>
             <Image
-              src="/pic/touseef.jpg"
-              alt="@touseefcodes"
+              src={largeProfileImage}
+              alt={`${author}'s profile picture`}
               loading="eager"
               objectFit="cover"
               width={810}

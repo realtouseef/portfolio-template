@@ -1,10 +1,10 @@
 interface Props {
-  id: number;
-  title: string;
-  description: string;
-  linkText: string;
-  link: string;
-  picture: string;
+  id?: number;
+  title?: string;
+  description?: string;
+  linkText?: string;
+  link?: string;
+  picture?: string;
 }
 
 export const WorkData: Props[] = [
