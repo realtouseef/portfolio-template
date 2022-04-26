@@ -1,5 +1,11 @@
 # Portfolio template
 
+A portfolio template for developers built with TypeScript and NextJS
+
+## Live Version
+
+[https://touseef.vercel.app](https://touseef.vercel.app)
+
 ## Make it Yours
 
 if you want to have more pages/navbar items then head to `src/components/Navbar/NavItems.tsx` and make addition there.
