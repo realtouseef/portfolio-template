@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
           </article>
         </section>
         <p className={styles.date}>
-          All Rights Reserved &copy; {new Date().getFullYear()}
+          {author} • All Rights Reserved &copy; {new Date().getFullYear()}
         </p>
       </footer>
     </>

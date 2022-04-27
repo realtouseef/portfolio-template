@@ -12,6 +12,10 @@ const Hero: React.FC = () => {
     linkedin,
     author,
     largeProfileImage,
+    detailedBio1,
+    detailedBio2,
+    detailedBio3,
+    detailedBio4,
   } = siteData;
 
   return (
@@ -29,6 +33,7 @@ const Hero: React.FC = () => {
                 width={30}
                 height={30}
                 objectFit="contain"
+                loading="eager"
               />
             </a>
             <a href={github} target="_blank" rel="noreferrer">
@@ -38,6 +43,7 @@ const Hero: React.FC = () => {
                 width={30}
                 height={30}
                 objectFit="contain"
+                loading="eager"
               />
             </a>
             <a href={linkedin} target="_blank" rel="noreferrer">
@@ -47,6 +53,7 @@ const Hero: React.FC = () => {
                 width={30}
                 height={30}
                 objectFit="contain"
+                loading="eager"
               />
             </a>
           </section>
@@ -54,28 +61,10 @@ const Hero: React.FC = () => {
         {/* picture and the biography goes here  */}
         <article className={styles.hero_biography}>
           <div className={styles.text}>
-            <p>
-              Touseef is a Jr. Software Engineer specializing in TypeScript,
-              ReactJS / NextJS / GatsbyJS, TailwindCSS, and Firebase. His
-              abilities go beyond just coding as he's a quick learner and has a
-              large appetite for knowledge. He has good leadership skills and
-              great communication skills as well.
-            </p>
-            <p>
-              His role is to write and style the front-end components that meet
-              the requirements of our mocks and fulfill our user stories.
-            </p>
-            <p>
-              Touseef is an expert at structuring well-performing,
-              easily-maintainable javascript frontend applications. He is also
-              well-versed in modern web technologies.
-            </p>
-            <p>
-              He has a knack for creating minimal websites. He has an eye for
-              even the smallest of details like choosing colors, font sizes,
-              images, etc. He is a big fan of simplicity and is a better team
-              leader as compared to an individual contributor.
-            </p>
+            <p>{detailedBio1}</p>
+            <p>{detailedBio2}</p>
+            <p>{detailedBio3}</p>
+            <p>{detailedBio4}</p>
             <a href={upwork} target="_blank" rel="noreferrer">
               <button>{externalHireLinkName}</button>
             </a>

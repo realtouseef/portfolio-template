@@ -5,7 +5,7 @@ import { siteData } from "../siteData";
 import { contactData } from "../miscData";
 
 const contact: React.FC = () => {
-  const { siteTitle, twitter, linkedin, email, github } = siteData;
+  const { siteTitle, twitter, linkedin, email, github, author } = siteData;
   const { briefBio1, briefBio2, techStack, availableFor } = contactData;
   return (
     <>
@@ -18,28 +18,31 @@ const contact: React.FC = () => {
           <a href={twitter} target="_blank" rel="noreferrer">
             <Image
               src="/icons/twitter.svg"
-              alt="twitter logo for @touseefcodes"
+              alt={`twitter logo for ${author}`}
               width={30}
               height={30}
               objectFit="contain"
+              loading="eager"
             />
           </a>
           <a href={github} target="_blank" rel="noreferrer">
             <Image
               src="/icons/github.svg"
-              alt="instagram logo for @touseefcodes"
+              alt={`instagram logo for ${author}`}
               width={30}
               height={30}
               objectFit="contain"
+              loading="eager"
             />
           </a>
           <a href={linkedin} target="_blank" rel="noreferrer">
             <Image
               src="/icons/linkedin.svg"
-              alt="linkedin logo for @touseefcodes"
+              alt={`linkedin logo for ${author}`}
               width={30}
               height={30}
               objectFit="contain"
+              loading="eager"
             />
           </a>
         </section>

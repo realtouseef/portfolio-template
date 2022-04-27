@@ -33,6 +33,7 @@ const work: React.FC = () => {
               width={1280}
               height={720}
               objectFit="contain"
+              loading="eager"
             />
             <hr />
           </article>
