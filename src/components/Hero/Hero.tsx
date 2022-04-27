@@ -1,6 +1,6 @@
 import styles from "./Hero.module.scss";
 import Image from "next/image";
-import { siteData } from "../../siteData";
+import { detailedBio, siteData } from "../../siteData";
 
 const Hero: React.FC = () => {
   const {
@@ -12,11 +12,10 @@ const Hero: React.FC = () => {
     linkedin,
     author,
     largeProfileImage,
-    detailedBio1,
-    detailedBio2,
-    detailedBio3,
-    detailedBio4,
   } = siteData;
+
+  const { detailedBio1, detailedBio2, detailedBio3, detailedBio4 } =
+    detailedBio;
 
   return (
     <>

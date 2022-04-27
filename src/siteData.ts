@@ -19,6 +19,13 @@ interface SiteProps {
   footerHeadshotImage?: string;
 }
 
+type DetailedBioProps = {
+  detailedBio1?: string;
+  detailedBio2?: string;
+  detailedBio3?: string;
+  detailedBio4?: string;
+};
+
 export const siteData: SiteProps = {
   siteTitle: "Touseef",
   secondaryTitle: "Jr. Software Engineer",
@@ -31,6 +38,16 @@ export const siteData: SiteProps = {
   externalHireLinkName: "upwork",
   // in this case, upwork | change it if you want
   description: `I'm Touseef ibn Khaleel — Jr. Software Engineer, TypeScript Lover, & an Open-source Enthusiast.`,
+  footerBriefBio:
+    "If you liked what you see and want to have a similar website or a diff one, you can contact me anytime. Click the below gif 😅",
+  siteKeywords:
+    "touseef, touseef ibn khaleel, open-source enthusiast, typescript engineer, software engineer, jr. software engineer",
+
+  largeProfileImage: "/pic/touseef.jpg",
+  footerHeadshotImage: "/pic/touseef-headshot.jpg",
+};
+
+export const detailedBio: DetailedBioProps = {
   detailedBio1: `Touseef is a Jr. Software Engineer specializing in TypeScript,
   ReactJS / NextJS / GatsbyJS, TailwindCSS, and Firebase. His abilities go beyond just coding as he's a quick learner and has a
   large appetite for knowledge. He has good leadership skills and
@@ -44,11 +61,4 @@ export const siteData: SiteProps = {
   even the smallest of details like choosing colors, font sizes,
   images, etc. He is a big fan of simplicity and is a better team
   leader as compared to an individual contributor.`,
-  footerBriefBio:
-    "If you liked what you see and want to have a similar website or a diff one, you can contact me anytime. Click the below gif 😅",
-  siteKeywords:
-    "touseef, touseef ibn khaleel, open-source enthusiast, typescript engineer, software engineer, jr. software engineer",
-
-  largeProfileImage: "/pic/touseef.jpg",
-  footerHeadshotImage: "/pic/touseef-headshot.jpg",
 };

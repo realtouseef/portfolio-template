@@ -8,19 +8,27 @@ interface WorkHistoryProps {
 }
 
 interface AboutProps {
-  bio?: string;
+  bio1?: string;
+  bio2?: string;
+  bio3?: string;
+  bio4?: string;
+  bio5?: string;
   workHistory?: WorkHistoryProps[];
 }
 
 export const aboutData: AboutProps = {
-  bio: `Touseef is a frontend developer specializing in React.js, NextJS, Tailwindcss, and SCSS. His abilities go beyond just coding as he's a quick learner and has a large appetite for knowledge. He has good leadership skills and great communication skills as well.
+  bio1: `Touseef is a frontend developer specializing in React.js, NextJS, Tailwindcss, and SCSS. His abilities go beyond just coding as he's a quick learner and has a large appetite for knowledge. He has good leadership skills and great communication skills as well.`,
+  bio2: `
 
   His role is to write and style the front-end components that meet the requirements of our mocks and fulfill our user stories.
-  
+  `,
+  bio3: `
   Touseef is an expert at structuring well-performing, easily-maintainable javascript frontend applications. He is also well-versed in modern web technologies.
-  
+  `,
+  bio4: `
   He has a knack for creating minimal websites. He has an eye for even the smallest of details like choosing colors, font sizes, images, etc. He is a big fan of simplicity and is a better team leader as compared to an individual contributor.
-  
+  `,
+  bio5: `
   Technologies I know/use: TailwindCSS, JavaScript, TypeScript, ReactJS/NextJS/GatsbyJS, GraphQL, Firebase
   `,
 

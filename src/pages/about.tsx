@@ -5,7 +5,7 @@ import { aboutData } from "../miscData";
 
 const about: React.FC = () => {
   const { siteTitle } = siteData;
-  const { bio, workHistory } = aboutData;
+  const { bio1, bio2, bio3, bio4, bio5, workHistory } = aboutData;
 
   return (
     <>
@@ -16,7 +16,11 @@ const about: React.FC = () => {
         <article className={styles.about}>
           <h1 className={styles.heading}>Make things & help others</h1>
           <article className={styles.about_content}>
-            <p>{bio}</p>
+            <p>{bio1}</p>
+            <p>{bio2}</p>
+            <p>{bio3}</p>
+            <p>{bio4}</p>
+            <p>{bio5}</p>
           </article>
         </article>
         <section className={styles.about_links}>
