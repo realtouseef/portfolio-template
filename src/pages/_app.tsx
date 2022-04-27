@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="keywords" content={siteKeywords} />
         <meta name="author" content={author} />
       </Head>
-      <Layout>
+    <Layout>
         <Component {...pageProps} />
       </Layout>
     </>

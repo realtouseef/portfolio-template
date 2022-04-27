@@ -13,7 +13,6 @@ const Hero: React.FC = () => {
     author,
     largeProfileImage,
   } = siteData;
-  console.log(largeProfileImage);
 
   return (
     <>
