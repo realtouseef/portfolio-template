@@ -1,11 +1,11 @@
-import styles from "./Hero.module.scss";
-import Image from "next/image";
-import { detailedBio, siteData } from "../../siteData";
+import styles from './Hero.module.scss';
+import Image from 'next/image';
+import { detailedBio, siteData } from '../../siteData';
 
 const Hero: React.FC = () => {
   const {
     github,
-    upwork,
+    externalHireLink,
     externalHireLinkName,
     description,
     twitter,
@@ -25,34 +25,34 @@ const Hero: React.FC = () => {
           <h1>{description}</h1>
           {/* link goes here  */}
           <section className={styles.hero_social}>
-            <a href={twitter} target="_blank" rel="noreferrer">
+            <a href={twitter} target='_blank' rel='noreferrer'>
               <Image
-                src="/icons/twitter.svg"
+                src='/icons/twitter.svg'
                 alt={`twitter logo for ${author}`}
                 width={30}
                 height={30}
-                objectFit="contain"
-                loading="eager"
+                objectFit='contain'
+                loading='eager'
               />
             </a>
-            <a href={github} target="_blank" rel="noreferrer">
+            <a href={github} target='_blank' rel='noreferrer'>
               <Image
-                src="/icons/github.svg"
+                src='/icons/github.svg'
                 alt={`instagram logo for ${author}`}
                 width={30}
                 height={30}
-                objectFit="contain"
-                loading="eager"
+                objectFit='contain'
+                loading='eager'
               />
             </a>
-            <a href={linkedin} target="_blank" rel="noreferrer">
+            <a href={linkedin} target='_blank' rel='noreferrer'>
               <Image
-                src="/icons/linkedin.svg"
+                src='/icons/linkedin.svg'
                 alt={`linkedin logo for ${author}`}
                 width={30}
                 height={30}
-                objectFit="contain"
-                loading="eager"
+                objectFit='contain'
+                loading='eager'
               />
             </a>
           </section>
@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
             <p>{detailedBio2}</p>
             <p>{detailedBio3}</p>
             <p>{detailedBio4}</p>
-            <a href={upwork} target="_blank" rel="noreferrer">
+            <a href={externalHireLink} target='_blank' rel='noreferrer'>
               <button>{externalHireLinkName}</button>
             </a>
           </div>
@@ -72,8 +72,8 @@ const Hero: React.FC = () => {
             <Image
               src={largeProfileImage}
               alt={`${author}'s profile picture`}
-              loading="eager"
-              objectFit="cover"
+              loading='eager'
+              objectFit='cover'
               width={810}
               height={1080}
               priority

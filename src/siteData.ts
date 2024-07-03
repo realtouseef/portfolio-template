@@ -6,7 +6,7 @@ interface SiteProps {
   github?: string;
   linkedin?: string;
   twitter?: string;
-  upwork?: string;
+  externalHireLink?: string;
   externalHireLinkName?: string;
   description?: string;
   detailedBio1?: string;
@@ -27,33 +27,31 @@ type DetailedBioProps = {
 };
 
 export const siteData: SiteProps = {
-  siteTitle: "Touseef",
-  secondaryTitle: "Jr. Software Engineer",
-  email: "touseef69r@gmail.com",
-  author: "@realtouseef",
-  github: "https://github.com/realtouseef",
-  linkedin: "https://linkedin.com/in/touseefcodes",
-  twitter: "https://twitter.com/touseefcodes",
-  upwork: "https://www.upwork.com/freelancers/~013c6a875bcebb5f00",
-  externalHireLinkName: "upwork",
+  siteTitle: 'Touseef',
+  secondaryTitle: 'MERN Stack Engineer',
+  email: 'touseefibnkhalil@gmail.com',
+  author: '@realtouseef',
+  github: 'https://github.com/realtouseef',
+  linkedin: 'https://linkedin.com/in/touseefcodes',
+  twitter: 'https://twitter.com/touseefcodes',
+  externalHireLink: 'https://linkedin.com/in/touseefcodes',
+  externalHireLinkName: 'Linkedin',
   // in this case, upwork | change it if you want
-  description: `I'm Touseef ibn Khaleel — Jr. Software Engineer, TypeScript Lover, & an Open-source Enthusiast.`,
+  description: `I'm Touseef ibn Khaleel — MERN Stack Engineer, TypeScript Lover, & an Open-source Enthusiast.`,
   footerBriefBio:
-    "If you liked what you see and want to have a similar website or a diff one, you can contact me anytime. Click the below gif 😅",
+    'If you liked what you see and want to have a similar website or a diff one, you can contact me anytime. Click the below gif 😅',
   siteKeywords:
-    "touseef, touseef ibn khaleel, open-source enthusiast, typescript engineer, software engineer, jr. software engineer",
+    'touseef, touseef ibn khaleel, open-source enthusiast, typescript engineer, software engineer, MERN Stack engineer',
 
-  largeProfileImage: "/pic/touseef.jpg",
-  footerHeadshotImage: "/pic/touseef-headshot.jpg",
+  largeProfileImage: '/pic/touseef-pro.jpeg',
+  footerHeadshotImage: '/pic/touseef-headshot.jpeg',
 };
 
 export const detailedBio: DetailedBioProps = {
-  detailedBio1: `Touseef is a Jr. Software Engineer specializing in TypeScript,
-  ReactJS / NextJS / GatsbyJS, TailwindCSS, and Firebase. His abilities go beyond just coding as he's a quick learner and has a
-  large appetite for knowledge. He has good leadership skills and
-  great communication skills as well.`,
-  detailedBio2: `His role is to write and style the front-end components that meet
-  the requirements of our mocks and fulfill our user stories.`,
+  detailedBio1: `
+  I'm a results-driven Software Engineer specializing in the MERN stack with expertise in JavaScript, TypeScript, NodeJS, Mongo, ReactJS, NextJS, and React Native. 💻
+  `,
+  detailedBio2: `With a passion for solving complex problems, I thrive in crafting robust and scalable solutions that meet and exceed client expectations. My hands-on experience in full-stack development helps me to navigate challenges efficiently, ensuring the delivery of high-quality software.`,
   detailedBio3: `Touseef is an expert at structuring well-performing,
   easily-maintainable javascript frontend applications. He is also
   well-versed in modern web technologies.`,
